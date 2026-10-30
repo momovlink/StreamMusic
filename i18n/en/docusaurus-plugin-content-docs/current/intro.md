@@ -31,15 +31,17 @@ NAS stands for `Network Attached Storage`. If you are unfamiliar with this term,
 
 ### iOS {#ios}
 
-Visit the [App Store product page](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496) to download.
+Visit the [App Store page](https://apps.apple.com/cn/app/%E9%9F%B3%E6%B5%81-%E8%BF%9E%E6%8E%A5%E4%BD%A0%E7%9A%84%E9%9F%B3%E4%B9%90/id6449966496) or search for `音流` or `Stream Music` in the App Store.
 
-### Windows {#windows}
+### Android, macOS, Windows {#other-platform}
 
-Visit the [Microsoft Store product page](https://apps.microsoft.com/detail/9ng5zw78qc1s) to download.
+Since Stream Music is not yet listed on other app stores, please find the latest version for download on [this page](./versions/latest).
 
-### Android & macOS {#other-platform}
+:::info
 
-Since StreamMusic hasn't been published on other app stores, please find the latest version for download on [this page](./versions/latest).
+The Windows installer uses the MSIX format. For installation instructions, [click here](./guides/install).
+
+:::
 
 ## Feedback & Suggestions {#feedback}
 

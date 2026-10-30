@@ -4,13 +4,13 @@ sidebar_position: 99
 
 # Latest
 
-Updated: 2025-07-10
+Updated: 2025-04-28
 
 :::tip Armor+1
 
 import DayCounter from '@site/src/components/DayCounter';
 
-StreamMusic has been released for <DayCounter dateStr="2023-06-06"/> days with 39 updates - still a young player!
+StreamMusic has been released for <DayCounter dateStr="2023-06-06"/> days with 37 updates - still a young player!
 
 Due to limited development experience and resources (while supporting multiple platforms & music services), updates and bug fixes may be slower than expected. Your understanding is appreciated.
 
@@ -24,124 +24,6 @@ import Button from '@mui/material/Button';
 import WindowIcon from '@mui/icons-material/Window';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
-
-## V1.3.9 (2025-07-10)
-
-:::tip Activity Notice
-
-The Musiver 1.3.x series development is complete. As per our convention, a two-week promotional campaign (¥10 price reduction) will begin upon the release of version 1.4.0.
-
-This upcoming version involves extensive modifications and is expected to take 2-3 months (possibly longer, no guarantees) to develop. Users interested in this promotion who wish to receive timely updates should follow our WeChat Official Account: `音流 - 连接你的音乐`.
-
-:::
-
-<Tabs groupId="operating-systems">
-<TabItem value="android" label="Android">
-<div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jej3kcj">Download Now</Button>
-</div>
-
-
-:::caution
-
-If you previously installed a non-universal build, you must uninstall and reinstall for this update. (The latest Flutter version fixes inconsistent build numbers across different architecture packages, but this prevents direct upgrades from previous versions.)
-
-:::
-</TabItem>
-
-<TabItem value="win" label="Windows">
-
-Recommended to install via [Microsoft Store](https://apps.microsoft.com/detail/9ng5zw78qc1s), or manually install using the button below.
-
-<div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/CmZZEtaR">Download Now</Button>
-</div>
-
-:::caution
-
-Since v1.3.8, the Windows version uses a new certificate file. If installation fails, please check the [Installation Guide](/docs/guides/install).
-
-:::
-</TabItem>
-
-<TabItem value="mac" label="macOS">
-<div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/G2MZEtCl">Download Now</Button>
-</div>
-
-:::caution
-
-Before installing this version on macOS, please delete the existing Musiver app in Finder's Applications folder. Otherwise, two instances will appear (the new version is renamed Musiver.app).
-
-:::
-</TabItem>
-</Tabs>
-
-- [Added click-to-jump functionality for lyric lines](https://github.com/gitbobobo/StreamMusic/issues/847)
-- [Implemented marquee effect for album lists](https://github.com/gitbobobo/StreamMusic/issues/1047)
-- [Optimized offline user experience](https://github.com/gitbobobo/StreamMusic/issues/1086)
-- [Added support for Navidrome's subtitle property](https://github.com/gitbobobo/StreamMusic/issues/1048)
-- Added support for deleting missing files in Navidrome
-- Added OpenSubsonic API support for fetching synchronized lyrics
-- Added continued playback support for Emby audiobook albums
-- [Only administrators can see shared playlists when adding songs](https://github.com/gitbobobo/StreamMusic/issues/1069)
-- [Desktop volume slider now applies changes in real-time](https://github.com/gitbobobo/StreamMusic/issues/1062)
-- [Desktop version now supports adding to playback queue](https://github.com/gitbobobo/StreamMusic/issues/1015)
-- [TV version now supports radio playback](https://github.com/gitbobobo/StreamMusic/issues/1081)
-- Fixed: [Windows activation issue when launching multiple instances](https://github.com/gitbobobo/StreamMusic/issues/1070)
-- Fixed: [Dynamic library conflicts on Windows](https://github.com/gitbobobo/StreamMusic/issues/1068)
-- Fixed: [Inconsistent fonts after language switching on Windows](https://github.com/gitbobobo/StreamMusic/issues/1077)
-
-## V1.3.8（2025-06-09）
-
-<Tabs groupId="operating-systems">
-<TabItem value="android" label="Android">
-<div class="mv-sm">
-    <Button variant="contained" startIcon={<AndroidIcon />} target="_blank" href="https://wwco.lanzouq.com/b00jegk50b">Download</Button>
-</div>
-</TabItem>
-
-<TabItem value="win" label="Windows">
-
-It is recommended to install directly from the [Microsoft Store](https://apps.microsoft.com/detail/9ng5zw78qc1s) or manually via the button below.
-
-<div class="mv-sm">
-    <Button variant="contained" startIcon={<WindowIcon />} target="_blank" href="https://www.ilanzou.com/s/sfhZVFga">Download</Button>
-</div>
-
-:::caution
-
-Starting from version 1.3.8, the certificate files for the Windows version have been replaced. If installation fails, please refer to the [Installation Tutorial](/docs/guides/install).
-
-:::
-</TabItem>
-
-<TabItem value="mac" label="macOS">
-<div class="mv-sm">
-    <Button variant="contained" startIcon={<AppleIcon />} target="_blank" href="https://www.ilanzou.com/s/asxZVZoH">Download</Button>
-</div>
-</TabItem>
-</Tabs>
-
-**Update Contents:**
-
-- [Allow exceeding the 500-song queue limit in partial playlist sequential playback](https://github.com/gitbobobo/StreamMusic/issues/772)
-- [Provide deduplication option when adding to playlist](https://github.com/gitbobobo/StreamMusic/issues/923)
-- Support playlist cover interface
-- Support radio station search interface
-- [Allow using basic functions on the playback page when playing radio stations](https://github.com/gitbobobo/StreamMusic/issues/982)
-- [Move volume adjustment button to control bar in desktop version](https://github.com/gitbobobo/StreamMusic/issues/998)
-- [Support adjusting cache location in desktop version](https://github.com/gitbobobo/StreamMusic/issues/1017)
-- [Use estimated duration instead of real-time duration during Subsonic transcoding playback](https://github.com/gitbobobo/StreamMusic/issues/983), where the estimated duration is always a few seconds longer than actual duration
-- [Add volume fade-in/fade-out toggle](https://github.com/gitbobobo/StreamMusic/issues/1014)
-- [Hide QR code scanning entry when device has no camera](https://github.com/gitbobobo/StreamMusic/issues/988)
-- [Hide the "stop after playback" option when playing radio stations](https://github.com/gitbobobo/StreamMusic/issues/1031)
-- [Disable sorting function for daily recommendations](https://github.com/gitbobobo/StreamMusic/issues/1000)
-- Fix jitter issue in Mac status bar lyrics
-- [Fix issue with repeated battery optimization prompts](https://github.com/gitbobobo/StreamMusic/issues/986)
-- [Fix issue where adjusting system time zone affects lyric timeline](https://github.com/gitbobobo/StreamMusic/issues/1028)
-- [Fix issue where album artist is not displayed on Subsonic album page](https://github.com/gitbobobo/StreamMusic/issues/1019)
-- [Fix issue where Emby and Plex cannot sync Last.fm scrobbles](https://github.com/gitbobobo/StreamMusic/issues/894)
 
 ## V1.3.7（2025-04-28）
 
